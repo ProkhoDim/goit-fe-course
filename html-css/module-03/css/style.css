@@ -23,7 +23,7 @@ ul > li {
 }
 
 .site_navigation a {
-  margin-left: 100px;
+  margin: 0 70px;
   font-size: 14px;
   line-height: 24px;
   color: #b4ad9e;
