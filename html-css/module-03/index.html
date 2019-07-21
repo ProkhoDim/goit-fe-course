@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap" rel="stylesheet" />
     <title>Module-03</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <nav>
         <ul class="site_navigation">
+          <li><a href="#">lifestyle</a></li>
           <li><a href="#">photodiary</a></li>
           <li><a href="#">music</a></li>
-          <li><a href="#">lifestyle</a></li>
           <li><a href="#">travel</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <article>
+      <article class="left_article">
         <img src="./img/girl_on_festival.jpg" alt="girl's on festival" width="420" height="280" />
-        <p>Lifestyle</p>
-        <h2>More than just a music festival</h2>
-        <p>
+        <p class="image_description">Lifestyle</p>
+        <h2 class="article_header">More than just a music festival</h2>
+        <p class="article_text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -35,11 +38,11 @@
           tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
       </article>
-      <article>
+      <article class="right_article">
         <img src="./img/hands_and_coffe.jpg" alt="woman hands with cup of coffe" width="419" height="280" />
-        <p>lifestyle</p>
-        <h2>Life tastes better with coffee</h2>
-        <p>
+        <p class="image_description">lifestyle</p>
+        <h2 class="article_header">Life tastes better with coffee</h2>
+        <p class="article_text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -51,11 +54,11 @@
           tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
       </article>
-      <article>
+      <article class="left_article">
         <img src="./img/love_and_piece.jpg" alt="two people show peace sign" width="420" height="280" />
-        <p>photodiary</p>
-        <h2>American dream</h2>
-        <p>
+        <p class="image_description">photodiary</p>
+        <h2 class="article_header">American dream</h2>
+        <p class="article_text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -67,11 +70,11 @@
           tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
       </article>
-      <article>
+      <article class="right_article">
         <img src="./img/alone_human.jpg" alt="girls hands with cup of coffe" width="419" height="280" />
-        <p>photodiary</p>
-        <h2>A day exploring the Alps</h2>
-        <p>
+        <p class="image_description">photodiary</p>
+        <h2 class="article_header">A day exploring the Alps</h2>
+        <p class="article_text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -83,7 +86,41 @@
           tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
       </article>
-      <button>Load more</button>
+      <article class="left_article">
+        <img src="./img/girl_on_road.jpg" alt="girl on road" width="420" height="280" />
+        <p class="image_description">lifestyle</p>
+        <h2 class="article_header">Top 10 song for running</h2>
+        <p class="article_text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+          omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+          porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+          tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+      </article>
+      <article class="right_article">
+        <img src="./img/road.jpg" alt="winter road with snow" width="419" height="280" />
+        <p class="image_description">lifestyle</p>
+        <h2 class="article_header">Cold winter days</h2>
+        <p class="article_text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+          omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+          porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+          tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+      </article>
+      <div class="button_box">
+        <button class="load_more_button">Load more</button>
+      </div>
     </main>
   </body>
 </html>
