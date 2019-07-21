@@ -18,12 +18,12 @@ body {
 }
 
 ul > li {
+  margin: 0 70px;
   list-style-type: none;
   display: inline-block;
 }
 
 .site_navigation a {
-  margin: 0 70px;
   font-size: 14px;
   line-height: 24px;
   color: #b4ad9e;
