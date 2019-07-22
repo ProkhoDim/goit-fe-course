@@ -39,12 +39,8 @@ a:hover {
   color: #03a9f4;
 }
 
-article {
-  vertical-align: top;
-}
-
 .page_article {
-  margin-bottom: 130px;
+  vertical-align: top;
   display: inline-block;
   margin-right: 56px;
   width: 420px;
@@ -52,6 +48,15 @@ article {
 
 .page_article:nth-child(even) {
   margin-right: 0px;
+}
+
+.row {
+  margin-bottom: 130px;
+  vertical-align: top;
+}
+
+.row:last-child {
+  margin-bottom: 50px;
 }
 
 img {
@@ -76,11 +81,6 @@ img {
   font-size: 14px;
   line-height: 17px;
   height: 63px;
-  overflow: hidden;
-}
-
-.page_article:last-child {
-  margin-bottom: 50px;
 }
 
 .button_box {
