@@ -37,6 +37,7 @@ a:hover {
 
 article {
   margin-top: 80px;
+  vertical-align: top;
 }
 
 .right_article {
