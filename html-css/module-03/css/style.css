@@ -7,9 +7,8 @@
 .page {
   font-family: "Playfair Display", "Times New Roman", serif;
   color: #626262;
-  padding: 70px 150px;
-  width: 1200px;
-  margin: auto;
+  margin: 70px auto;
+  width: 900px;
 }
 
 .site_navigation {
@@ -44,18 +43,14 @@ a:hover {
   display: inline-block;
   margin-right: 56px;
   width: 420px;
+  margin-bottom: 130px;
 }
 
 .page_article:nth-child(even) {
   margin-right: 0px;
 }
 
-.row {
-  margin-bottom: 130px;
-  vertical-align: top;
-}
-
-.row:last-child {
+.page_article:nth-last-child(-n + 3) {
   margin-bottom: 50px;
 }
 
@@ -89,12 +84,13 @@ img {
 
 .load_more_button {
   background-color: #fff;
+  color: #626262;
   width: 164px;
   height: 60px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   margin-right: auto;
-  border: 1px solid black;
+  border: 1px solid #626262;
   cursor: pointer;
 }
