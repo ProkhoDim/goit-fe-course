@@ -11,7 +11,7 @@ body {
 
 .page {
   width: 1110px;
-  margin: auto;S
+  margin: auto;
 }
 
 .clearfix::after {
@@ -25,21 +25,14 @@ body {
 .site_navigation {
   margin-top: 36px;
   margin-bottom: 106px;
-}
-
-.site_navigation li {
-  list-style-type: none;
   text-transform: uppercase;
+  height: auto;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
-  color:#ffffff;
-}
-
-nav, ul{
-  height: auto;
-  overflow: hidden;
+  color: inherit;
 }
 
 nav {
@@ -48,11 +41,7 @@ nav {
 
 h1 {
   margin: 0;
-}
-
-h1 a {
-  display: block;
-  color: inherit;
+  color: #555252;
 }
 
 .logo {
@@ -62,8 +51,6 @@ h1 a {
   font-size: 30px;
   font-weight: 300;
   line-height: 32px;
-  color: #555252;
-  text-transform: uppercase;
 }
 
 .logo::first-letter {
@@ -81,9 +68,10 @@ h1 a {
 
 .nav_links {
   display: inline;
+  list-style-type: none;
 }
 
-.nav_links:nth-last-of-type(n+2) {
+.nav_links:nth-last-of-type(n + 2) {
   padding-right: 30px;
 }
 
@@ -123,16 +111,15 @@ h2.main_header {
 /* product block */
 
 .product_select {
-  margin-bottom: 103px;
+  margin-bottom: 73px;
+  height: auto;
+  overflow: hidden;
 }
 
 .product_item {
-  display: block;
   float: left;
   background-color: #323232;
   width: 255px;
-  /* height: 322px; */
-  vertical-align: top;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -141,13 +128,12 @@ h2.main_header {
   margin-right: 0;
 }
 
-.product_item:nth-of-type(n + 5) {
+/* .product_item:nth-of-type(n + 5) {
   margin-bottom: 0;
-}
+} */
 
 .product_item:hover {
   background-color: #1abc9c;
-  /* cursor: pointer; */
 }
 
 .product_item img {
@@ -184,17 +170,15 @@ h2.main_header {
 /* News block */
 
 .news_content h2 {
-    margin-bottom: 81px;
+  margin-bottom: 81px;
 }
 
 .news_article {
-  display: block;
   float: left;
   width: 350px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #555252;
   vertical-align: top;
-  margin-right: 30px;
 }
 
 .news_article img {
@@ -214,12 +198,11 @@ h2.main_header {
   content: "";
   background-color: #4ec6ab;
   height: 3px;
-  text-align: left;
   margin-top: 11px;
 }
 
-.news_article:last-child {
-  margin-right: 0;
+.news_article:nth-last-child(n + 2) {
+  margin-right: 30px;
 }
 
 .news_article p {
