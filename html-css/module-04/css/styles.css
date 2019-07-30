@@ -11,7 +11,7 @@ body {
 
 .page {
   width: 1110px;
-  margin: 36px auto;
+  margin: auto;S
 }
 
 .clearfix::after {
@@ -23,6 +23,7 @@ body {
 /* Header */
 
 .site_navigation {
+  margin-top: 36px;
   margin-bottom: 106px;
 }
 
@@ -33,6 +34,16 @@ body {
 
 a {
   text-decoration: none;
+  color:#ffffff;
+}
+
+nav, ul{
+  height: auto;
+  overflow: hidden;
+}
+
+nav {
+  float: right;
 }
 
 h1 {
@@ -53,7 +64,6 @@ h1 a {
   line-height: 32px;
   color: #555252;
   text-transform: uppercase;
-  margin-right: 567px;
 }
 
 .logo::first-letter {
@@ -64,20 +74,17 @@ h1 a {
 
 .nav_links a {
   font-size: 14px;
+  line-height: 32px;
   font-weight: 700;
   color: #0f0101;
 }
 
 .nav_links {
-  display: block;
-  float: left;
-  padding-top: 9px;
-  padding-right: 30px;
-  padding-bottom: 9px;
+  display: inline;
 }
 
-.nav_links:last-child {
-  padding-right: 0px;
+.nav_links:nth-last-of-type(n+2) {
+  padding-right: 30px;
 }
 
 .nav_links a:hover,
@@ -97,7 +104,7 @@ h2 {
   font-weight: 900;
   color: #555252;
   text-align: center;
-  margin-bottom: 81px;
+  text-transform: uppercase;
 }
 
 h2::after {
@@ -106,8 +113,7 @@ h2::after {
   width: 164px;
   height: 7px;
   content: "";
-  margin: auto;
-  margin-top: 32px;
+  margin: 32px auto 0;
 }
 
 h2.main_header {
@@ -125,7 +131,7 @@ h2.main_header {
   float: left;
   background-color: #323232;
   width: 255px;
-  height: 322px;
+  /* height: 322px; */
   vertical-align: top;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -141,23 +147,23 @@ h2.main_header {
 
 .product_item:hover {
   background-color: #1abc9c;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .product_item img {
-  float: left;
+  display: table;
   background-color: #e9f0fd;
 }
 
-h3 {
-  display: inline-block;
+.product_item h3 {
+  float: left;
   font-size: 18px;
   line-height: 40px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-h3::before {
+.product_item h3::before {
   display: inline-block;
   width: 15px;
   content: "";
@@ -177,6 +183,10 @@ h3::before {
 
 /* News block */
 
+.news_content h2 {
+    margin-bottom: 81px;
+}
+
 .news_article {
   display: block;
   float: left;
@@ -191,14 +201,14 @@ h3::before {
   margin-bottom: 14px;
 }
 
-h4 {
+.news_article h3 {
   font-size: 18px;
   font-weight: 600;
   text-align: left;
   margin-bottom: 29px;
 }
 
-h4::after {
+.news_article h3::after {
   display: block;
   width: 136px;
   content: "";
@@ -213,7 +223,6 @@ h4::after {
 }
 
 .news_article p {
-  color: inherit;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
