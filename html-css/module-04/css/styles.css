@@ -7,6 +7,7 @@
 .page {
   width: 1110px;
   margin: auto;
+  padding: 36px 0;
   color: #555252;
 }
 
@@ -19,11 +20,8 @@
 /* Header */
 
 .site_navigation {
-  margin-top: 36px;
   margin-bottom: 106px;
   text-transform: uppercase;
-  height: auto;
-  overflow: hidden;
 }
 
 a {
@@ -107,8 +105,6 @@ h2.main_header {
 
 .product_select {
   margin-bottom: 73px;
-  height: auto;
-  overflow: hidden;
 }
 
 .product_item {
@@ -129,7 +125,7 @@ h2.main_header {
 }
 
 .product_item img {
-  display: table;
+  display: block;
   background-color: #e9f0fd;
 }
 
@@ -152,10 +148,6 @@ h2.main_header {
 }
 
 /* News block */
-
-.news_content {
-  margin-bottom: 36px;
-}
 
 .news_content h2 {
   margin-bottom: 81px;
