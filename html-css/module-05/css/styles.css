@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg_color_slider: rgb(50, 50, 50);
+  --bg_color_main: rgb(233, 240, 253);
+  --bg_color_footer: rgb(50, 50, 50);
+  --bg_color_overlay: #000;
+  --hover_color_slides_btn: rgba(78, 198, 171, 1);
+  --bg_color_slides_btn: rgba(78, 198, 171, 0.65);
+  --hover_color_overlay_icon: #1abc9c;
+
+  --ff_logo: "Roboto", "Arial", sans-serif;
+  --color_logo: #555252;
+  --fs_logo: 30px;
+
+  --ff_nav_links: "Open Sans", "Arial", sans-serif;
+  --color_nav_links: #0f0101;
+  --fs_nav_links: 14px;
+
+  --ff_slides: "Roboto", "Arial", sans-serif;
+  --color_slides: #ffffff;
+  --fs_slides_header: 60px;
+  --fs_slides_p: 24px;
+
+  --ff_header: "Roboto", "Arial", sans-serif;
+  --color_header: #515151;
+
+  --ff_product_item: "Roboto", "Arial", sans-serif;
+  --color_product_item: #ffffff;
+  --bg_color_product_item: #323232;
+  --hover_color_product_item: #1abc9c;
+  --color_icon: #ffffff;
+
+  --ff_add_to_cart: "Open Sans", "Arial", sans-serif;
+
+  --ff_footer: "Open Sans", "Arial", sans-serif;
+  --color_footer: #ffffff;
+  --hover_footer: #46bfa9;
+}
+
+.main_container {
+  width: 1110px;
+  height: 100%;
+  margin: auto;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Header */
+
+.site_navigation {
+  padding-top: 36px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  float: right;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+h1,
+h2,
+.product_select {
+  font-family: var(--ff_product_item);
+}
+
+h1 {
+  margin: 0;
+}
+
+.logo {
+  display: block;
+  float: left;
+  font-size: var(--fs_logo);
+  font-weight: 300;
+  line-height: 32px;
+  color: var(--color_logo);
+}
+
+.logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+  content: "";
+}
+
+.nav_links a {
+  font-family: var(--ff_nav_links);
+  color: var(--color_nav_links);
+  font-size: var(--fs_nav_links);
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.nav_links {
+  display: inline;
+}
+
+.nav_links:nth-last-of-type(n + 2) {
+  padding-right: 30px;
+}
+
+.nav_links a:hover,
+.nav_links a:focus {
+  color: #1abc9c;
+}
+
+/* main content */
+
+main {
+  background-color: var(--bg_color_main);
+}
+
+/* Slider */
+
+.slider_background {
+  position: relative;
+  height: 600px;
+  background-color: var(--bg_color_slider);
+  margin-bottom: 100px;
+}
+
+.slider_image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 2, 0.52);
+}
+
+.slider {
+  position: relative;
+  color: var(--color_slides);
+  text-transform: uppercase;
+}
+
+.slider_btn {
+  position: absolute;
+  z-index: 2;
+  top: 225px;
+  width: 104px;
+  height: 104px;
+  color: inherit;
+  font-size: 100px;
+  background-color: var(--bg_color_slides_btn);
+}
+
+.slider_btn:hover {
+  background-color: var(--hover_color_slides_btn);
+}
+
+.slider_prv_btn {
+  left: 0;
+}
+
+.slider_nxt_btn {
+  right: 0;
+}
+
+/* SLides */
+
+.slides {
+  position: relative;
+  left: 175px;
+  top: 200px;
+}
+
+.slides_text {
+  position: absolute;
+  font-family: var(--ff_slides);
+}
+
+.slides_header {
+  font-size: var(--fs_slides_header);
+  line-height: var(--fs_slides_header);
+  font-weight: 600;
+}
+
+.slides_p {
+  top: 82px;
+  font-size: var(--fs_slides_p);
+  line-height: var(--fs_slides_p);
+  font-weight: 300;
+}
+
+/* New collection */
+
+.main_header {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main_header::after {
+  display: block;
+  background-color: #4ec6ab;
+  width: 164px;
+  height: 7px;
+  content: "";
+  margin: 32px auto 0;
+}
+
+.main_header {
+  font-family: var(--ff_header);
+  color: var(--color_header);
+  margin-bottom: 92px;
+}
+
+/* product block */
+
+.product_select {
+  padding-bottom: 100px;
+}
+
+.product_item {
+  position: relative;
+  float: left;
+  font-family: var(--ff_product_item);
+  color: var(--color_product_item);
+  background-color: var(--bg_color_product_item);
+  width: 255px;
+}
+
+.product_item:nth-last-of-type(n + 2) {
+  margin-right: 30px;
+}
+
+.product_item:hover,
+.product_item:focus {
+  background-color: var(--hover_color_product_item);
+}
+
+.product_item img {
+  display: block;
+}
+
+.product_item h3 {
+  float: left;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.price {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.43);
+  width: 54px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Overlay cart */
+
+.overlay_cart {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 282px;
+}
+
+.overlay_opacity_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid;
+  background-color: var(--bg_color_overlay);
+  opacity: 0.55;
+}
+
+.product_item:hover .overlay_cart {
+  z-index: 1;
+}
+
+.overlay_cart_icons {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+}
+
+.overlay_icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+}
+
+.add_to_cart {
+  border: 1px solid #ffffff;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+}
+
+.add_to_cart button {
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  float: left;
+  color: var(--color_icon);
+  font-size: 30px;
+  padding: 9px;
+}
+
+.add_to_cart span {
+  color: var(--color_icon);
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--ff_add_to_cart);
+  float: left;
+  line-height: 48px;
+}
+
+.overlay_icon:hover,
+.add_to_cart:hover {
+  background-color: var(--hover_color_overlay_icon);
+  border: none;
+}
+
+.overlay_icon:nth-of-type(-n + 2) {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+  font-family: var(--ff_footer);
+  padding: 35px;
+  color: var(--color_footer);
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  background-color: var(--bg_color_footer);
+}
+
+footer a:hover {
+  color: var(--hover_footer);
+}
