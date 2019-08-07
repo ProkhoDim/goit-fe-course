@@ -162,15 +162,15 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .slider_btn {
   position: absolute;
-  z-index: 2;
+  top: 50%;
   transform: translateY(-50%);
   width: 100px;
   height: 100px;
-  color: inherit;
   font-size: 100px;
   background-color: var(--bg_color_slides_btn);
   color: var(--color_slides);
@@ -191,12 +191,8 @@ main {
 /* SLides */
 
 .slides {
-  position: absolute;
-  z-index: 2;
-  width: 69%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: left;
 }
 
 .slides_text {
