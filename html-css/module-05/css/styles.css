@@ -166,9 +166,9 @@ main {
 }
 
 .slider_btn {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   width: 100px;
   height: 100px;
   font-size: 100px;
@@ -181,11 +181,13 @@ main {
 }
 
 .slider_prv_btn {
-  left: 0;
+  /* left: 0; */
+  float: left;
 }
 
 .slider_nxt_btn {
-  right: 0;
+  /* right: 0; */
+  float: right;
 }
 
 /* SLides */
@@ -203,13 +205,16 @@ main {
 
 .slides_header {
   font-size: var(--fs_slides_header);
-  line-height: 82px;
+  line-height: var(--fs_slides_header);
+  /* line-height: 82px; */
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .slides_p {
   font-size: var(--fs_slides_p);
-  line-height: 54px;
+  line-height: var(--fs_slides_p);
+  /* line-height: 54px; */
   font-weight: 300;
 }
 
