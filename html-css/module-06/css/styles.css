@@ -45,6 +45,18 @@ input[type="radio"].visually-hidden {
   --ff_sh_second_line: "Montserrat", Arial, sans-serif;
   --fs_sh_second_line: 30px;
   --bgc_sh_after: #f38181;
+  --ff_services_header: "Montserrat", Arial, sans-serif;
+  --fs_services_header: 14px;
+  --color_services_header: #333333;
+  --ff_services_descr: "Roboto", Arial, sans-serif;
+  --fs_services_descr: 15px;
+  --color_services_descr: #999999;
+  --ff_card_name: "Montserrat", Arial, sans-serif;
+  --fs_card_name: 14px;
+  --color_card_name: #333333;
+  --ff_card_descr: "Roboto", Arial, sans-serif;
+  --fs_card_descr: 15px;
+  --color_card_descr: #999999;
 }
 
 a {
@@ -200,6 +212,23 @@ header {
   float: left;
 }
 
+.services_header {
+  font-family: var(--ff_services_header);
+  font-size: var(--fs_services_header);
+  font-weight: 400;
+  color: var(--color_services_header);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.services_description {
+  font-family: var(--ff_services_descr);
+  font-size: var(--fs_services_descr);
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color_services_descr);
+}
+
 /* Section Team */
 
 .team {
@@ -207,6 +236,11 @@ header {
 }
 
 .team_description {
+  font-family: var(--ff_services_descr);
+  font-size: var(--fs_services_descr);
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color_services_descr);
   text-align: center;
   padding: 0 130px;
   margin-bottom: 95px;
@@ -297,11 +331,24 @@ header {
 }
 
 .card_name {
+  font-family: var(--ff_card_name);
+  font-size: var(--fs_card_name);
+  color: var(--color_card_name);
+  text-transform: uppercase;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 
 .card_descr {
+  font-family: var(--ff_card_descr);
+  font-size: var(--fs_card_descr);
+  color: var(--color_card_descr);
+  font-weight: 300;
+  font-style: italic;
 }
+
+
+
 
 footer {
   padding-top: 25px;
