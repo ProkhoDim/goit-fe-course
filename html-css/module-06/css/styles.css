@@ -57,6 +57,8 @@ input[type="radio"].visually-hidden {
   --ff_card_descr: "Roboto", Arial, sans-serif;
   --fs_card_descr: 15px;
   --color_card_descr: #999999;
+  --ff_submit_btn: "Montserrat", Arial, sans-serif;
+  --ff_form: "Montserrat", Arial, sans-serif;
 }
 
 a {
@@ -96,10 +98,6 @@ header {
   margin-bottom: 130px;
 }
 
-.logo {
-  display: inline-block;
-}
-
 .logo_link {
   font-size: var(--fs_logo);
   font-weight: 700;
@@ -108,7 +106,6 @@ header {
 .site_navigation_list {
   width: 490px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -184,9 +181,7 @@ header {
 
 .services_list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .services_item {
@@ -194,18 +189,10 @@ header {
   margin-right: 10px;
 }
 
-.services_item img {
+.icon {
   float: left;
   margin: 0 30px;
 }
-
-/* .alarm_icon::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/ALARM.png);
-  background-repeat: no-repeat;
-  margin: 0 30px;
-} */
 
 .services_text {
   width: 300px;
@@ -229,6 +216,7 @@ header {
   color: var(--color_services_descr);
 }
 
+/* ---------------------------------- */
 /* Section Team */
 
 .team {
@@ -254,7 +242,7 @@ header {
   text-align: center;
 }
 
-.background {
+.background_for_overlay {
   background-color: rgba(149, 225, 211, 1);
   margin-bottom: 30px;
 }
@@ -330,6 +318,8 @@ header {
   background-image: url(../img/instagram.png);
 }
 
+/* Team text */
+
 .card_name {
   font-family: var(--ff_card_name);
   font-size: var(--fs_card_name);
@@ -347,17 +337,65 @@ header {
   font-style: italic;
 }
 
-
-
+/* ---------------------------------------------- */
+/* Footer */
 
 footer {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-family: var(--ff_form);
+  color: #333333;
+  font-size: 14px;
 }
 
 .author_link {
   color: #f38181;
+}
+
+/* From */
+
+form {
+  display: flex;
+}
+
+.email_input {
+  color: #cccccc;
+  font-family: var(--ff_card_descr);
+  border: 1px solid #e7e7e7;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+  width: 230px;
+  padding-left: 10px;
+}
+
+.email_input::placeholder {
+  color: #cccccc;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+:focus::placeholder {
+  content: "";
+  opacity: 0;
+}
+
+.subscribe_btn {
+  font-family: var(--ff_submit_btn);
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #95e1d3;
+  border: none;
+  cursor: pointer;
+  padding: 13px 33px;
 }

@@ -11,30 +11,30 @@
   <body>
     <div class="page">
       <header>
-        <h1 class="logo"><a class="logo_link" href="#">MoGo</a></h1>
+        <h1><a class="logo_link" href="#">MoGo</a></h1>
         <nav>
           <ul class="site_navigation_list">
             <li class="site_navigation_item">
-              <a href="#" class="site_navigation_link">About</a>
+              <a href="#">About</a>
             </li>
             <li class="site_navigation_item">
-              <a href="#" class="site_navigation_link">Service</a>
+              <a href="#">Service</a>
             </li>
             <li class="site_navigation_item">
-              <a href="#" class="site_navigation_link">Work</a>
+              <a href="#">Work</a>
             </li>
             <li class="site_navigation_item">
-              <a href="#" class="site_navigation_link">Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li class="site_navigation_item">
-              <a href="#" class="site_navigation_link">Contact</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </nav>
       </header>
-
+      <!-- Main content -->
       <main>
-        <section class="services">
+        <section>
           <h2 class="site_header">
             <span class="first_line_header">We work with</span>
             <span class="second_line_header">Amazing Services</span>
@@ -49,6 +49,7 @@
                 </p>
               </div>
             </li>
+
             <li class="services_item clearfix">
               <img src="./img/LINE_GRAPH.png" alt="line graph icon" class="icon" width="30" height="30" />
               <div class="services_text">
@@ -58,6 +59,7 @@
                 </p>
               </div>
             </li>
+
             <li class="services_item clearfix">
               <img src="./img/COMPUTER_OK.png" alt="computer ok icon" class="icon" width="30" height="30" />
               <div class="services_text">
@@ -67,6 +69,7 @@
                 </p>
               </div>
             </li>
+
             <li class="services_item clearfix">
               <img src="./img/BOOK_2.png" alt="book icon" class="icon" width="30" height="30" />
               <div class="services_text">
@@ -76,6 +79,7 @@
                 </p>
               </div>
             </li>
+
             <li class="services_item clearfix">
               <img src="./img/HOME.png" alt="home icon" class="icon" width="30" height="30" />
               <div class="services_text">
@@ -85,6 +89,7 @@
                 </p>
               </div>
             </li>
+
             <li class="services_item clearfix">
               <img src="./img/IMAGE.png" alt="image icon" class="icon" width="30" height="30" />
               <div class="services_text">
@@ -103,12 +108,15 @@
             <span class="second_line_header">Meet our team</span>
           </h2>
           <p class="team_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
           </p>
+          <!-- Team cards -->
           <ul class="team_cards">
             <li class="card_item">
-              <div class="background">
+              <!-- Overlay effect -->
+              <div class="background_for_overlay">
                 <div class="overlay_block">
                   <img src="./img/Matthew_Dix.jpg" alt="Mattew Dix" width="380" height="420" />
                   <div class="overlay">
@@ -129,12 +137,15 @@
                   </div>
                 </div>
               </div>
+              <!-- end Overlay effect -->
+
               <h3 class="card_name">Matthew Dix</h3>
               <p class="card_descr">Graphic Design</p>
             </li>
 
             <li class="card_item">
-              <div class="background">
+              <!-- Overlay effect -->
+              <div class="background_for_overlay">
                 <div class="overlay_block">
                   <img src="./img/Christopher_Campbell.jpg" alt="Christopher Campbell" width="380" height="420" />
                   <div class="overlay">
@@ -155,11 +166,15 @@
                   </div>
                 </div>
               </div>
+              <!-- end Overlay effect -->
+
               <h3 class="card_name">Christopher Campbell</h3>
               <p class="card_descr">Branding/UX design</p>
             </li>
+
             <li class="card_item">
-              <div class="background">
+              <!-- Overlay effect -->
+              <div class="background_for_overlay">
                 <div class="overlay_block">
                   <img src="./img/Michael_Fertig.jpg" alt="Michael Fertig" width="380" height="420" />
                   <div class="overlay">
@@ -180,6 +195,8 @@
                   </div>
                 </div>
               </div>
+              <!-- end Overlay effect -->
+
               <h3 class="card_name">Michael Fertig</h3>
               <p class="card_descr">Developer</p>
             </li>
@@ -187,11 +204,12 @@
         </section>
       </main>
 
+      <!-- Footer -->
       <footer>
         <span class="copyright">© 2016 MoGo free PSD template by <a href="#" class="author_link">Laaqiq</a></span>
         <form action="#">
-          <input type="text" class="email_input" placeholder="Your Email..." />
-          <input type="submit" value="Subscribe" />
+          <input type="email" class="email_input" placeholder="Your Email..." />
+          <input type="submit" class="subscribe_btn" value="Subscribe" />
         </form>
       </footer>
     </div>
