@@ -13,12 +13,6 @@
   box-sizing: border-box;
 }
 
-.clearfix::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -222,18 +216,11 @@ header {
   background-image: url(../img/IMAGE.png);
 }
 
-/* .icon {
-  float: left;
-  margin: 0 30px;
-} */
-
 .services_text {
-  /* float: left; */
   padding-left: 90px;
 }
 
 .services_header {
-  /* float: left; */
   font-family: var(--ff_services_header);
   font-size: var(--fs_services_header);
   font-weight: 400;
