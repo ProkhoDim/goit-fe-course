@@ -42,8 +42,8 @@ input[type="radio"].visually-hidden {
   --header_hover_color: #f38181;
   --ff_sh_first_line: "Kaushan Script", "Times New Roman", serif;
   --fs_sh_first_line: 24px;
-  --ff_sh_second_line: "Montserrat", Arial, sans-serif;
-  --fs_sh_second_line: 30px;
+  --ff_sh_section_header: "Montserrat", Arial, sans-serif;
+  --fs_sh_section_header: 30px;
   --bgc_sh_after: #f38181;
   --ff_services_header: "Montserrat", Arial, sans-serif;
   --fs_services_header: 14px;
@@ -141,8 +141,14 @@ header {
 /* Section services */
 /* Header h2 */
 
-.site_header {
+.section_header {
   text-align: center;
+  position: relative;
+  font-family: var(--ff_sh_section_header);
+  font-size: var(--fs_sh_section_header);
+  line-height: var(--fs_sh_section_header);
+  font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 90px;
 }
 
@@ -153,20 +159,11 @@ header {
   line-height: var(--fs_sh_first_line);
   font-weight: 400;
   font-style: italic;
+  text-transform: none;
   margin-bottom: 20px;
 }
 
-.second_line_header {
-  display: block;
-  position: relative;
-  font-family: var(--ff_sh_second_line);
-  font-size: var(--fs_sh_second_line);
-  line-height: var(--fs_sh_second_line);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.second_line_header::after {
+.section_header::after {
   content: "";
   display: block;
   position: absolute;
@@ -185,21 +182,58 @@ header {
 }
 
 .services_item {
+  width: 390px;
   margin-bottom: 100px;
   margin-right: 10px;
+  position: relative;
 }
 
-.icon {
+.icon::before {
+  display: inline-block;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 30px;
+}
+
+.alarm::before {
+  background-image: url(../img/ALARM.png);
+}
+
+.line_graph::before {
+  background-image: url(../img/LINE_GRAPH.png);
+}
+
+.computer::before {
+  background-image: url(../img/COMPUTER_OK.png);
+}
+
+.book::before {
+  background-image: url(../img/BOOK_2.png);
+}
+
+.home::before {
+  background-image: url(../img/HOME.png);
+}
+
+.image::before {
+  background-image: url(../img/IMAGE.png);
+}
+
+/* .icon {
   float: left;
   margin: 0 30px;
-}
+} */
 
 .services_text {
-  width: 300px;
-  float: left;
+  /* float: left; */
+  padding-left: 90px;
 }
 
 .services_header {
+  /* float: left; */
   font-family: var(--ff_services_header);
   font-size: var(--fs_services_header);
   font-weight: 400;
@@ -242,6 +276,10 @@ header {
   text-align: center;
 }
 
+.card_item {
+  width: 380px;
+}
+
 .background_for_overlay {
   background-color: rgba(149, 225, 211, 1);
   margin-bottom: 30px;
@@ -268,20 +306,17 @@ header {
   bottom: 0;
   right: 0;
   background-image: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social_icon_list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  width: 224px;
+  display: flex;
+  flex-direction: row;
 }
 
 .social_icon_item {
-  display: block;
-  float: left;
   width: 55px;
   height: 55px;
 }
@@ -366,7 +401,7 @@ form {
 }
 
 .email_input {
-  color: #cccccc;
+  color: #333333;
   font-family: var(--ff_card_descr);
   border: 1px solid #e7e7e7;
   font-size: 15px;
