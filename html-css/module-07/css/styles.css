@@ -187,24 +187,25 @@ header {
 .services_list {
   padding-top: 20px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 230px;
 }
 
 .services_item {
   width: 290px;
-  margin-bottom: 100px;
-  margin-right: 10px;
   text-align: center;
 }
 
 .icon::before {
-  display: block;
+  display: inline-block;
   content: "";
   width: 66px;
   height: 66px;
   border: 3px solid #fed136;
   border-radius: 50%;
   background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 25px;
 }
 
 .basket::before {
@@ -225,7 +226,7 @@ header {
   font-weight: 400;
   color: var(--color_services_header);
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .services_description {
