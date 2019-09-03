@@ -1,42 +1,43 @@
 /* montserrat-regular - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+  src:   url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Modern Browsers */
 }
 /* montserrat-700 - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/montserrat-v14-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Bold'), local('Montserrat-Bold'),
-       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+  src:    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Modern Browsers */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v9-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-slab-v9-latin-regular.woff") format("woff"); /* Modern Browsers */
 }
 /* Wisdom-Script-700 - latin */
 @font-face {
-  font-family: 'Wisdom Script';
+  font-family: "Wisdom Script";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/WisdomScriptAJ.woff'); /* IE9 Compat Modes */
-  src: local('Wisdom Script Bold'), local('Wisdom Script-Bold'),
-       url('../fonts/WisdomScriptAJ.woff') format('woff'), /* Modern Browsers */
+  src: url("../fonts/WisdomScriptAJ.woff"); /* Super Modern Browsers */
 }
-/* dm-serif-display-regular - latin */
+/* dm-serif-text-italic - latin */
 @font-face {
-  font-family: 'DM Serif Display';
-  font-style: normal;
+  font-family: 'DM Serif Text';
+  font-style: italic;
   font-weight: 400;
-  src: url('../fonts/dm-serif-display-v3-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('DM Serif Display Regular'), local('DMSerifDisplay-Regular'),
-       url('../fonts/dm-serif-display-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/dm-serif-display-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+  src: url('../fonts/dm-serif-text-v3-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/dm-serif-text-v3-latin-italic.woff') format('woff'); /* Modern Browsers */
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -48,46 +49,33 @@
   box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 :root {
   --ff_header: "Montserrat", Arial, sans-serif;
-  --ff_logo: "Wisdom Script", Arial, sans-serif;
   --color_header: #212121;
+
+  --ff_logo: "Wisdom Script", Arial, sans-serif;
   --color_logo: #fdd135;
   --fs_logo: 30px;
+
   --fs_site_navigation_list: 14px;
   --header_hover_color: #fdd135;
-  --ff_sh_second_line: "Kaushan Script", "Times New Roman", serif;
-  --fs_sh_second_line: 24px;
+
+  --ff_sh_second_line: "DM Serif Text", "Times New Roman", serif;
+  --fs_sh_second_line: 16px;
+
   --ff_sh_section_header: "Montserrat", Arial, sans-serif;
   --fs_sh_section_header: 40px;
   --bgc_sh_after: #f38181;
+
   --ff_services_header: "Montserrat", Arial, sans-serif;
-  --fs_services_header: 14px;
-  --color_services_header: #333333;
-  --ff_services_descr: "Roboto", Arial, sans-serif;
+  --fs_services_header: 18px;
+  --color_services_header: #222222;
+
+  --ff_services_descr: "Roboto Slab", Arial, sans-serif;
   --fs_services_descr: 15px;
-  --color_services_descr: #999999;
-  --ff_card_name: "Montserrat", Arial, sans-serif;
-  --fs_card_name: 14px;
-  --color_card_name: #333333;
-  --ff_card_descr: "Roboto", Arial, sans-serif;
-  --fs_card_descr: 15px;
-  --color_card_descr: #999999;
+  --color_services_descr: #777777;
+
   --ff_submit_btn: "Montserrat", Arial, sans-serif;
   --ff_form: "Montserrat", Arial, sans-serif;
 }
@@ -112,21 +100,20 @@ img {
   display: block;
 }
 
-.page {
+.content_area {
   width: 940px;
   margin: 0 auto;
 }
 
 /* Header */
 
-header {
+header .content_area {
   font-family: var(--ff_header);
   color: var(--color_header);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-top: 42px;
-  margin-bottom: 125px;
 }
 
 .logo_link {
@@ -144,7 +131,6 @@ header {
 }
 
 .site_navigation_item {
-  position: relative;
   font-size: var(--fs_site_navigation_list);
   font-weight: 700;
   line-height: var(--fs_site_navigation_list);
@@ -164,23 +150,24 @@ header {
   text-align: center;
   font-family: var(--ff_sh_section_header);
   font-size: var(--fs_sh_section_header);
-  line-height: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
+  padding-top: 110px;
 }
 
 .second_line_header {
   display: block;
+  color: #777777;
   font-family: var(--ff_sh_second_line);
   font-size: var(--fs_sh_second_line);
-  line-height: calc(var(--fs_sh_second_line)*1.2);
+  line-height: calc(var(--fs_sh_second_line) * 1.2);
   font-weight: 400;
   font-style: italic;
   text-transform: none;
+  padding-top: 10px;
   margin-bottom: 20px;
 }
-
 
 /* Service list */
 
@@ -223,9 +210,9 @@ header {
 .services_header {
   font-family: var(--ff_services_header);
   font-size: var(--fs_services_header);
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: -1px;
   color: var(--color_services_header);
-  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
@@ -237,171 +224,66 @@ header {
   color: var(--color_services_descr);
 }
 
+.contact_box .section_header::first-line {
+  color: #ffffff;
+}
+
 /* ---------------------------------- */
-/* Section Team */
 
-.team {
-  margin-bottom: 85px;
+/* From */
+form {
+  padding-bottom: 115px;
+  font-family: var(--ff_form);
 }
 
-.team_description {
-  font-family: var(--ff_services_descr);
-  font-size: var(--fs_services_descr);
-  line-height: 24px;
-  font-weight: 400;
-  color: var(--color_services_descr);
-  text-align: center;
-  padding: 0 130px;
-  margin-bottom: 95px;
-}
-
-/* ul Team cards */
-
-.team_cards {
+.input {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-}
-
-.card_item {
-  width: 380px;
-}
-
-.background_for_overlay {
-  background-color: rgba(149, 225, 211, 1);
   margin-bottom: 30px;
 }
 
-.overlay_block {
-  position: relative;
-}
-
-.overlay_block:hover {
-  transition: transform 200ms linear;
-  transform: translate(-10px, -10px);
-}
-
-.overlay_block:hover .overlay {
-  z-index: 1;
-}
-
-.overlay {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+.one_rows_input {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social_icon_list {
-  display: flex;
-  flex-direction: row;
-}
-
-.social_icon_item {
-  width: 55px;
-  height: 55px;
-}
-
-.social_icon_item:nth-last-of-type(n + 2) {
-  margin-right: 1px;
-}
-
-.social_icon_item a {
-  display: block;
-  background-repeat: no-repeat;
-  background-color: #fce38a;
-  width: 100%;
-  height: 100%;
-}
-
-.social_icon_item a:hover {
-  background-color: #95e1d3;
-}
-
-.facebook {
-  background-image: url(../img/facebook.png);
-}
-
-.twitter {
-  background-image: url(../img/twitter.png);
-}
-
-.pinterest {
-  background-image: url(../img/pinterest.png);
-}
-
-.instagram {
-  background-image: url(../img/instagram.png);
-}
-
-/* Team text */
-
-.card_name {
-  font-family: var(--ff_card_name);
-  font-size: var(--fs_card_name);
-  color: var(--color_card_name);
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-.card_descr {
-  font-family: var(--ff_card_descr);
-  font-size: var(--fs_card_descr);
-  color: var(--color_card_descr);
-  font-weight: 300;
-  font-style: italic;
-}
-
-/* ---------------------------------------------- */
-/* Footer */
-
-footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: 1px solid #e5e5e5;
-  display: flex;
+  flex-flow: column;
   justify-content: space-between;
-  align-items: center;
 }
 
-.copyright {
-  font-family: var(--ff_form);
-  color: #333333;
+textarea {
+  width: 450px;
+  height: 210px;
+  border: none;
   font-size: 14px;
+  padding: 20px;
+  resize: none;
+  display: block;
+  border-radius: 2px;
 }
 
-.author_link {
-  color: #f38181;
-}
-
-/* From */
-
-form {
-  display: flex;
-}
-
-.email_input {
+input {
   color: #333333;
-  font-family: var(--ff_card_descr);
-  border: 1px solid #e7e7e7;
-  font-size: 15px;
-  line-height: 24px;
-  font-style: italic;
-  width: 230px;
-  padding-left: 10px;
+  border: none;
+  width: 455px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 20px;
+  border-radius: 2px;
 }
 
-.email_input::placeholder {
-  color: #cccccc;
-  font-size: 15px;
-  line-height: 24px;
+*:not([name="subject"]):valid {
+  outline-color: green;
+}
+
+*:not([name="subject"]):invalid {
+  outline-color: red;
+}
+
+*::placeholder {
+  color: #bbbbbb;
+  font-family: var(--ff_form);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 :focus::placeholder {
@@ -411,13 +293,23 @@ form {
 
 .subscribe_btn {
   font-family: var(--ff_submit_btn);
-  font-size: 14px;
-  line-height: 14px;
+  display: block;
+  font-size: 18px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #95e1d3;
+  background-color: #fed136;
   border: none;
+  border-radius: 3px;
+  width: 240px;
+  height: 65px;
   cursor: pointer;
-  padding: 13px 33px;
+  margin: 0 auto;
+}
+
+.contact_box {
+  background-image: url(../img/Map_Image.png);
+  background-repeat: no-repeat;
+  background-color: #222222;
+  background-position: right bottom 20px;
 }

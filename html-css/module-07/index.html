@@ -11,87 +11,93 @@
   <body>
     <div class="page">
       <header>
-        <h1><a class="logo_link" href="#">Golden</a></h1>
-        <nav>
-          <ul class="site_navigation_list">
-            <li class="site_navigation_item">
-              <a href="#">Home</a>
-            </li>
-            <li class="site_navigation_item">
-              <a href="#">Services</a>
-            </li>
-            <li class="site_navigation_item">
-              <a href="#">Portfolio</a>
-            </li>
-            <li class="site_navigation_item">
-              <a href="#">About</a>
-            </li>
-            <li class="site_navigation_item">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="content_area">
+          <h1><a class="logo_link" href="#">Golden</a></h1>
+          <nav>
+            <ul class="site_navigation_list">
+              <li class="site_navigation_item">
+                <a href="#">Home</a>
+              </li>
+              <li class="site_navigation_item">
+                <a href="#">Services</a>
+              </li>
+              <li class="site_navigation_item">
+                <a href="#">Portfolio</a>
+              </li>
+              <li class="site_navigation_item">
+                <a href="#">About</a>
+              </li>
+              <li class="site_navigation_item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <!-- Main content -->
       <main>
         <section>
-          <h2 class="section_header">
-            Services
-            <span class="second_line_header">Proin iaculis purus consequat sem cure.</span>
-          </h2>
-          <ul class="services_list">
-            <li class="services_item">
-              <div class="services_text icon basket">
-                <h3 class="services_header">E-Commerce</h3>
-                <p class="services_description">
-                  Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                  posuere odio in tincidunt.
-                </p>
-              </div>
-            </li>
+          <div class="content_area">
+            <h2 class="section_header">
+              Services
+              <span class="second_line_header">Proin iaculis purus consequat sem cure.</span>
+            </h2>
+            <ul class="services_list">
+              <li class="services_item">
+                <div class="services_text icon basket">
+                  <h3 class="services_header">E-Commerce</h3>
+                  <p class="services_description">
+                    Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                    posuere odio in tincidunt.
+                  </p>
+                </div>
+              </li>
 
-            <li class="services_item">
-              <div class="services_text icon laptop">
-                <h3 class="services_header">Responsive Web</h3>
-                <p class="services_description">
-                  Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                  posuere odio in tincidunt.
-                </p>
-              </div>
-            </li>
+              <li class="services_item">
+                <div class="services_text icon laptop">
+                  <h3 class="services_header">Responsive Web</h3>
+                  <p class="services_description">
+                    Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                    posuere odio in tincidunt.
+                  </p>
+                </div>
+              </li>
 
-            <li class="services_item">
-              <div class="services_text icon locked">
-                <h3 class="services_header">Web Security</h3>
-                <p class="services_description">
-                  Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                  posuere odio in tincidunt.
-                </p>
-              </div>
-            </li>
-          </ul>
+              <li class="services_item">
+                <div class="services_text icon locked">
+                  <h3 class="services_header">Web Security</h3>
+                  <p class="services_description">
+                    Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                    posuere odio in tincidunt.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="contact_box">
-          <h2 class="section_header">
-            Contact us
-            <span class="second_line_header">Proin iaculis purus consequat sem cure.</span>
-          </h2>
-          <!-- input box -->
-          <form action="#">
-            <div class="input">
-              <div class="one_rows_input">
-                <input type="text" name="name" placeholder="Your Name *." />
-                <input type="email" name="email" placeholder="Your Email *" />
-                <input type="text" name="subject" placeholder="Subject" />
+          <div class="content_area">
+            <h2 class="section_header">
+              Contact us
+              <span class="second_line_header">Proin iaculis purus consequat sem cure.</span>
+            </h2>
+            <!-- input box -->
+            <form action="#">
+              <div class="input">
+                <div class="one_rows_input">
+                  <input type="text" name="name" placeholder="Your Name *" />
+                  <input type="email" name="email" placeholder="Your Email *" />
+                  <input type="text" name="subject" placeholder="Subject" />
+                </div>
+                <div class="text_input">
+                  <textarea name="message" cols="20" rows="10" placeholder="Your Message *"></textarea>
+                </div>
               </div>
-              <div class="text_input">
-                <textarea name="message" cols="30" rows="10" placeholder="Your Message *"></textarea>
-              </div>
-            </div>
 
-            <input type="submit" class="subscribe_btn" value="Send Message" />
-          </form>
+              <input type="submit" class="subscribe_btn" value="Send Message" />
+            </form>
+          </div>
         </section>
       </main>
     </div>
