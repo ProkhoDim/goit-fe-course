@@ -51,33 +51,10 @@
 
 
 :root {
-  --ff_header: "Montserrat", Arial, sans-serif;
-  --color_header: #212121;
-
-  --ff_logo: "Wisdom Script", Arial, sans-serif;
-  --color_logo: #fdd135;
-  --fs_logo: 30px;
-
-  --fs_site_navigation_list: 14px;
-  --header_hover_color: #fdd135;
-
-  --ff_sh_second_line: "DM Serif Text", "Times New Roman", serif;
-  --fs_sh_second_line: 16px;
-
-  --ff_sh_section_header: "Montserrat", Arial, sans-serif;
-  --fs_sh_section_header: 40px;
-  --bgc_sh_after: #f38181;
-
-  --ff_services_header: "Montserrat", Arial, sans-serif;
-  --fs_services_header: 18px;
-  --color_services_header: #222222;
-
-  --ff_services_descr: "Roboto Slab", Arial, sans-serif;
-  --fs_services_descr: 15px;
-  --color_services_descr: #777777;
-
-  --ff_submit_btn: "Montserrat", Arial, sans-serif;
-  --ff_form: "Montserrat", Arial, sans-serif;
+  --ff_montserat: "Montserrat", Arial, sans-serif;
+  --ff_wisdom: "Wisdom Script", Arial, sans-serif;
+  --ff_dm_serif: "DM Serif Text", "Times New Roman", serif;
+  --ff_roboto_slab: "Roboto Slab", Arial, sans-serif;
 }
 
 a {
@@ -100,16 +77,16 @@ img {
   display: block;
 }
 
-.content_area {
+.container {
   width: 940px;
   margin: 0 auto;
 }
 
 /* Header */
 
-header .content_area {
-  font-family: var(--ff_header);
-  color: var(--color_header);
+header .container {
+  font-family: var(--ff_montserat);
+  color: #212121;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -117,10 +94,10 @@ header .content_area {
 }
 
 .logo_link {
-  font-family: var(--ff_logo);
+  font-family: var(--ff_wisdom);
   font-style: italic;
-  font-size: var(--fs_logo);
-  color: var(--color_logo);
+  font-size: 30px;
+  color: #fdd135;
   font-weight: 700;
 }
 
@@ -131,14 +108,14 @@ header .content_area {
 }
 
 .site_navigation_item {
-  font-size: var(--fs_site_navigation_list);
+  font-size: 14px;
   font-weight: 700;
-  line-height: var(--fs_site_navigation_list);
+  line-height: 14px;
   text-transform: uppercase;
 }
 
 .site_navigation_item:hover {
-  color: var(--header_hover_color);
+  color: #fdd135;
 }
 
 /* Header */
@@ -148,25 +125,24 @@ header .content_area {
 
 .section_header {
   text-align: center;
-  font-family: var(--ff_sh_section_header);
-  font-size: var(--fs_sh_section_header);
+  font-family: var(--ff_montserat);
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 70px;
   padding-top: 110px;
 }
 
-.second_line_header {
-  display: block;
+.section_header_descr {
+  text-align: center;
   color: #777777;
-  font-family: var(--ff_sh_second_line);
-  font-size: var(--fs_sh_second_line);
-  line-height: calc(var(--fs_sh_second_line) * 1.2);
+  font-family: var(--ff_dm_serif);
+  font-size: 16px;
+  line-height: calc(16px * 1.2);
   font-weight: 400;
   font-style: italic;
   text-transform: none;
   padding-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 /* Service list */
@@ -208,20 +184,20 @@ header .content_area {
 }
 
 .services_header {
-  font-family: var(--ff_services_header);
-  font-size: var(--fs_services_header);
+  font-family: var(--ff_montserat);
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: -1px;
-  color: var(--color_services_header);
+  color: #222222;
   margin-bottom: 20px;
 }
 
 .services_description {
-  font-family: var(--ff_services_descr);
-  font-size: var(--fs_services_descr);
+  font-family: var(--ff_roboto_slab);
+  font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--color_services_descr);
+  color: #777777;
 }
 
 .contact_box .section_header::first-line {
@@ -233,12 +209,13 @@ header .content_area {
 /* From */
 form {
   padding-bottom: 115px;
-  font-family: var(--ff_form);
+  font-family: var(--ff_montserat);
 }
 
-.input {
+.input_box {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -280,7 +257,7 @@ input {
 
 *::placeholder {
   color: #bbbbbb;
-  font-family: var(--ff_form);
+  font-family: var(--ff_montserat);
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
@@ -292,7 +269,7 @@ input {
 }
 
 .subscribe_btn {
-  font-family: var(--ff_submit_btn);
+  font-family: var(--ff_montserat);
   display: block;
   font-size: 18px;
   color: #ffffff;
