@@ -51,7 +51,7 @@ button {
   text-align: center;
   font-family: var(--ff_montserat);
 }
-.wrapper {
+.container {
   min-width: 320px;
   min-height: 540px;
   background: #1a1915 url(../img/backgroundimage.png) no-repeat center;
@@ -130,11 +130,11 @@ button {
   width: 280px;
   padding: 10px;
   border-radius: 20px;
-  border: 2px solid #ff0000;
+  border: 2px solid #ff4e50;
 }
 
 .find-other {
-  background-color: #ff0000;
+  background-color: #ff4e50;
 }
 
 /* ------------------------------------------------------- */
@@ -165,7 +165,7 @@ button {
 
 .person-item_photo {
   display: block;
-  border-radius: 60px;
+  border-radius: 50%;
 }
 
 .image-wrap {
@@ -225,11 +225,10 @@ button {
 
 .see-other {
   color: #ff4e50;
-  border: 2px solid #ff4e50;
 }
 
 @media (min-width: 768px) {
-  .wrapper {
+  .container {
     min-height: 700px;
   }
 
@@ -283,11 +282,8 @@ button {
   }
 }
 
-@media (min-width: 1440px) {
-  .headline {
-    width: 940px;
-  }
-
+@media (min-width: 940px) {
+  .headline,
   .person-list {
     width: 940px;
   }
