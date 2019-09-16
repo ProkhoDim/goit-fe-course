@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --ff_header: "Montserrat", Arial, sans-serif;
+  --color_header: #95e1d3;
+  --fs_logo: 30px;
+  --fs_site_navigation_list: 14px;
+  --header_hover_color: #f38181;
+  --ff_sh_first_line: "Kaushan Script", "Times New Roman", serif;
+  --fs_sh_first_line: 24px;
+  --ff_sh_section_header: "Montserrat", Arial, sans-serif;
+  --fs_sh_section_header: 30px;
+  --bgc_sh_after: #f38181;
+  --ff_services_header: "Montserrat", Arial, sans-serif;
+  --fs_services_header: 14px;
+  --color_services_header: #333333;
+  --ff_services_descr: "Roboto", Arial, sans-serif;
+  --fs_services_descr: 15px;
+  --color_services_descr: #999999;
+  --ff_card_name: "Montserrat", Arial, sans-serif;
+  --fs_card_name: 14px;
+  --color_card_name: #333333;
+  --ff_card_descr: "Roboto", Arial, sans-serif;
+  --fs_card_descr: 15px;
+  --color_card_descr: #999999;
+  --ff_submit_btn: "Montserrat", Arial, sans-serif;
+  --ff_form: "Montserrat", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  font-family: var(--ff_header);
+  color: var(--color_header);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 30px;
+  margin-bottom: 130px;
+}
+
+.logo-link {
+  font-size: var(--fs_logo);
+  font-weight: 700;
+}
+
+.navigation-list {
+  width: 490px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list__item {
+  position: relative;
+  font-size: var(--fs_site_navigation_list);
+  font-weight: 400;
+  line-height: var(--fs_site_navigation_list);
+  text-transform: uppercase;
+}
+
+.navigation-list__item:hover {
+  color: var(--header_hover_color);
+}
+
+.navigation-list__item::after {
+  position: absolute;
+  display: block;
+  transform: translateY(10px);
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: var(--header_hover_color);
+  transition: width 200ms linear 0ms;
+}
+
+.navigation-list__item:hover:after {
+  width: 100%;
+}
+
+/* Header */
+/* ----------------------------------------- */
+/* Section services */
+/* Header h2 */
+
+.section-header {
+  text-align: center;
+  position: relative;
+  font-family: var(--ff_sh_section_header);
+  font-size: var(--fs_sh_section_header);
+  line-height: var(--fs_sh_section_header);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.section-header__pre-header {
+  display: block;
+  font-family: var(--ff_sh_first_line);
+  font-size: var(--fs_sh_first_line);
+  line-height: var(--fs_sh_first_line);
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 40px);
+  width: 60px;
+  height: 3px;
+  background-color: var(--bgc_sh_after);
+}
+
+/* Service list */
+
+.services-list {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-list__item {
+  width: 390px;
+  margin-bottom: 100px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.icon::before {
+  display: inline-block;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 30px;
+}
+
+.alarm::before {
+  background-image: url(../img/ALARM.png);
+}
+
+.line_graph::before {
+  background-image: url(../img/LINE_GRAPH.png);
+}
+
+.computer::before {
+  background-image: url(../img/COMPUTER_OK.png);
+}
+
+.book::before {
+  background-image: url(../img/BOOK_2.png);
+}
+
+.home::before {
+  background-image: url(../img/HOME.png);
+}
+
+.image::before {
+  background-image: url(../img/IMAGE.png);
+}
+
+.services_text {
+  padding-left: 90px;
+}
+
+.services_header {
+  font-family: var(--ff_services_header);
+  font-size: var(--fs_services_header);
+  font-weight: 400;
+  color: var(--color_services_header);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.services_description {
+  font-family: var(--ff_services_descr);
+  font-size: var(--fs_services_descr);
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color_services_descr);
+}
+
+/* ---------------------------------- */
+/* Section Team */
+
+.our-team {
+  margin-bottom: 85px;
+}
+
+.team_description {
+  font-family: var(--ff_services_descr);
+  font-size: var(--fs_services_descr);
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color_services_descr);
+  text-align: center;
+  padding: 0 130px;
+  margin-bottom: 95px;
+}
+
+/* ul Team cards */
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.team-item {
+  width: 380px;
+}
+
+.background_for_overlay {
+  background-color: rgba(149, 225, 211, 1);
+  margin-bottom: 30px;
+}
+
+.overlay_block {
+  position: relative;
+}
+
+.overlay_block:hover {
+  transition: transform 200ms linear;
+  transform: translate(-10px, -10px);
+}
+
+.overlay_block:hover .overlay {
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icon-list__item {
+  width: 55px;
+  height: 55px;
+}
+
+.social-icon-list__item:nth-last-of-type(n + 2) {
+  margin-right: 1px;
+}
+
+.social-icon-list__item a {
+  display: block;
+  background-repeat: no-repeat;
+  background-color: #fce38a;
+  width: 100%;
+  height: 100%;
+}
+
+.social-icon-list__item a:hover {
+  background-color: #95e1d3;
+}
+
+.social-icon-list__item--facebook {
+  background-image: url(../img/facebook.png);
+}
+
+.social-icon-list__item--twitter {
+  background-image: url(../img/twitter.png);
+}
+
+.social-icon-list__item--pinterest {
+  background-image: url(../img/pinterest.png);
+}
+
+.social-icon-list__item--instagram {
+  background-image: url(../img/instagram.png);
+}
+
+/* Team text */
+
+.team-item__name {
+  font-family: var(--ff_card_name);
+  font-size: var(--fs_card_name);
+  color: var(--color_card_name);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card_descr {
+  font-family: var(--ff_card_descr);
+  font-size: var(--fs_card_descr);
+  color: var(--color_card_descr);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* ---------------------------------------------- */
+/* Footer */
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-family: var(--ff_form);
+  color: #333333;
+  font-size: 14px;
+}
+
+.author_link {
+  color: #f38181;
+}
+
+/* From */
+
+form {
+  display: flex;
+}
+
+.email_input {
+  color: #333333;
+  font-family: var(--ff_card_descr);
+  border: 1px solid #e7e7e7;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+  width: 230px;
+  padding-left: 10px;
+}
+
+.email_input::placeholder {
+  color: #cccccc;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+:focus::placeholder {
+  content: "";
+  opacity: 0;
+}
+
+.subscribe_btn {
+  font-family: var(--ff_submit_btn);
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #95e1d3;
+  border: none;
+  cursor: pointer;
+  padding: 13px 33px;
+}
