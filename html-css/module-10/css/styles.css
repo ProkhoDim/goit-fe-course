@@ -29,33 +29,12 @@ input[type="radio"].visually-hidden {
 }
 
 :root {
-  --ff_header: "Montserrat", Arial, sans-serif;
-  --color_header: #95e1d3;
-  --fs_logo: 30px;
-  --fs_site_navigation_list: 14px;
-  --header_hover_color: #f38181;
-  --ff_sh_first_line: "Kaushan Script", "Times New Roman", serif;
-  --fs_sh_first_line: 24px;
-  --ff_sh_section_header: "Montserrat", Arial, sans-serif;
-  --fs_sh_section_header: 30px;
-  --bgc_sh_after: #f38181;
-  --ff_services_header: "Montserrat", Arial, sans-serif;
-  --fs_services_header: 14px;
-  --color_services_header: #333333;
-  --ff_services_descr: "Roboto", Arial, sans-serif;
-  --fs_services_descr: 15px;
-  --color_services_descr: #999999;
-  --ff_card_name: "Montserrat", Arial, sans-serif;
-  --fs_card_name: 14px;
-  --color_card_name: #333333;
-  --ff_card_descr: "Roboto", Arial, sans-serif;
-  --fs_card_descr: 15px;
-  --color_card_descr: #999999;
-  --ff_submit_btn: "Montserrat", Arial, sans-serif;
-  --ff_form: "Montserrat", Arial, sans-serif;
+  --ff_montserrat: "Montserrat", Arial, sans-serif;
+  --ff_kaushan_script: "Kaushan Script", "Times New Roman", serif;
+  --ff_roboto: "Roboto", Arial, sans-serif;
 }
 
-a {
+.link {
   text-decoration: none;
   color: inherit;
 }
@@ -82,9 +61,9 @@ img {
 
 /* Header */
 
-header {
-  font-family: var(--ff_header);
-  color: var(--color_header);
+.header {
+  font-family: var(--ff_montserrat);
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -93,7 +72,7 @@ header {
 }
 
 .logo-link {
-  font-size: var(--fs_logo);
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -105,14 +84,14 @@ header {
 
 .navigation-list__item {
   position: relative;
-  font-size: var(--fs_site_navigation_list);
+  font-size: 14px;
   font-weight: 400;
-  line-height: var(--fs_site_navigation_list);
+  line-height: 14px;
   text-transform: uppercase;
 }
 
 .navigation-list__item:hover {
-  color: var(--header_hover_color);
+  color: #fce38a;
 }
 
 .navigation-list__item::after {
@@ -122,7 +101,7 @@ header {
   content: "";
   width: 0%;
   height: 3px;
-  background-color: var(--header_hover_color);
+  background-color: #fce38a;
   transition: width 200ms linear 0ms;
 }
 
@@ -138,9 +117,9 @@ header {
 .section-header {
   text-align: center;
   position: relative;
-  font-family: var(--ff_sh_section_header);
-  font-size: var(--fs_sh_section_header);
-  line-height: var(--fs_sh_section_header);
+  font-family: var(--ff_montserrat);
+  font-size: 30px;
+  line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 90px;
@@ -148,9 +127,9 @@ header {
 
 .section-header__pre-header {
   display: block;
-  font-family: var(--ff_sh_first_line);
-  font-size: var(--fs_sh_first_line);
-  line-height: var(--fs_sh_first_line);
+  font-family: var(--ff_kaushan_script);
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 400;
   font-style: italic;
   text-transform: none;
@@ -165,7 +144,7 @@ header {
   transform: translate(-50%, 40px);
   width: 60px;
   height: 3px;
-  background-color: var(--bgc_sh_after);
+  background-color: #f38181;
 }
 
 /* Service list */
@@ -222,20 +201,20 @@ header {
 }
 
 .services_header {
-  font-family: var(--ff_services_header);
-  font-size: var(--fs_services_header);
+  font-family: var(--ff_montserrat);
+  font-size: #333333;
   font-weight: 400;
-  color: var(--color_services_header);
+  color: #333333;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
 .services_description {
-  font-family: var(--ff_services_descr);
-  font-size: var(--fs_services_descr);
+  font-family: var(--ff_roboto);
+  font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--color_services_descr);
+  color: #999999;
 }
 
 /* ---------------------------------- */
@@ -246,11 +225,11 @@ header {
 }
 
 .team_description {
-  font-family: var(--ff_services_descr);
-  font-size: var(--fs_services_descr);
+  font-family: var(--ff_roboto);
+  font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--color_services_descr);
+  color: #999999;
   text-align: center;
   padding: 0 130px;
   margin-bottom: 95px;
@@ -344,18 +323,18 @@ header {
 /* Team text */
 
 .team-item__name {
-  font-family: var(--ff_card_name);
-  font-size: var(--fs_card_name);
-  color: var(--color_card_name);
+  font-family: var(--ff_montserrat);
+  font-size: 14px;
+  color: #333333;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
 }
 
 .card_descr {
-  font-family: var(--ff_card_descr);
-  font-size: var(--fs_card_descr);
-  color: var(--color_card_descr);
+  font-family: var(--ff_roboto);
+  font-size: 15px;
+  color: #999999;
   font-weight: 300;
   font-style: italic;
 }
@@ -373,24 +352,24 @@ footer {
 }
 
 .copyright {
-  font-family: var(--ff_form);
+  font-family: var(--ff_montserrat);
   color: #333333;
   font-size: 14px;
 }
 
-.author_link {
+.copyright__link {
   color: #f38181;
 }
 
 /* From */
 
-form {
+.subscribe {
   display: flex;
 }
 
-.email_input {
+.subscribe__input {
   color: #333333;
-  font-family: var(--ff_card_descr);
+  font-family: var(--ff_roboto);
   border: 1px solid #e7e7e7;
   font-size: 15px;
   line-height: 24px;
@@ -399,7 +378,7 @@ form {
   padding-left: 10px;
 }
 
-.email_input::placeholder {
+.subscribe__input::placeholder {
   color: #cccccc;
   font-size: 15px;
   line-height: 24px;
@@ -410,8 +389,8 @@ form {
   opacity: 0;
 }
 
-.subscribe_btn {
-  font-family: var(--ff_submit_btn);
+.subscribe__btn {
+  font-family: var(--ff_montserrat);
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
