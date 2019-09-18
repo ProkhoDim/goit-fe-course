@@ -10,91 +10,110 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <h1><a class="logo-link link" href="#">MoGo</a></h1>
-        <nav>
-          <ul class="navigation-list">
-            <li class="navigation-list__item">
-              <a class="link" href="#">About</a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="link" href="#">Service</a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="link" href="#">Work</a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="link" href="#">Blog</a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="link" href="#">Contact</a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="link" href="#">
-                <svg>
-                  <use href=""></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <!-- Main content -->
-      <main>
-        <section>
-          <h2 class="section-header">
-            <span class="section-header__pre-header">We work with</span>Amazing Services
+      <div class="background">
+        <header class="header container">
+          <h1><a class="logo-link link" href="#">MoGo</a></h1>
+          <nav>
+            <ul class="nav-list list">
+              <li class="nav-list__item nav-list__item--animation-underline">
+                <a class="link" href="#">About</a>
+              </li>
+              <li class="nav-list__item nav-list__item--animation-underline">
+                <a class="link" href="#">Service</a>
+              </li>
+              <li class="nav-list__item nav-list__item--animation-underline">
+                <a class="link" href="#">Work</a>
+              </li>
+              <li class="nav-list__item nav-list__item--animation-underline">
+                <a class="link" href="#">Blog</a>
+              </li>
+              <li class="nav-list__item nav-list__item--animation-underline">
+                <a class="link" href="#">Contact</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="link" href="#">
+                  <svg class="header-icon">
+                    <use href="./img/header.svg#icon-shopping-card"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="link" href="#">
+                  <svg class="header-icon">
+                    <use href="./img/header.svg#icon-magnifying-glass"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="container">
+          <h2 class="section-title  section-title--big section-title--white">
+            <span class="section-title__pre-title section-title__pre-title--big">
+              Creative Template</span
+            >
+            Welcome to MoGo
           </h2>
-          <ul class="services-list">
+          <a class="button l-more-btn link" href="#">Learn more</a>
+        </section>
+      </div>
+
+      <!-- Main content -->
+      <main class="container">
+        <section>
+          <h2 class="section-title  section-title--line-after">
+            <span class="section-title__pre-title">We work with</span>Amazing Services
+          </h2>
+          <ul class="services-list list">
             <li class="services-list__item">
-              <div class="services_text icon alarm">
-                <h3 class="services_header">Photography</h3>
-                <p class="services_description">
+              <div class="services-list__text icon alarm">
+                <h3 class="services-list__header">Photography</h3>
+                <p class="services-list__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
 
             <li class="services-list__item">
-              <div class="services_text icon line_graph">
-                <h3 class="services_header">Web Design</h3>
-                <p class="services_description">
+              <div class="services-list__text icon line_graph">
+                <h3 class="services-list__header">Web Design</h3>
+                <p class="services-list__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
 
             <li class="services-list__item">
-              <div class="services_text icon computer">
-                <h3 class="services_header">Creativity</h3>
-                <p class="services_description">
+              <div class="services-list__text icon computer">
+                <h3 class="services-list__header">Creativity</h3>
+                <p class="services-list__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
 
             <li class="services-list__item">
-              <div class="services_text icon book">
-                <h3 class="services_header">Seo</h3>
-                <p class="services_description">
+              <div class="services-list__text icon book">
+                <h3 class="services-list__header">Seo</h3>
+                <p class="services-list__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
 
             <li class="services-list__item">
-              <div class="services_text icon home">
-                <h3 class="services_header">Css/Html</h3>
-                <p class="services_description">
+              <div class="services-list__text icon home">
+                <h3 class="services-list__header">Css/Html</h3>
+                <p class="services-list__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
 
             <li class="services-list__item">
-              <div class="services_text icon image">
-                <h3 class="services_header">Digital</h3>
-                <p class="services_description">
+              <div class="services-list__text icon image">
+                <h3 class="services-list__header">Digital</h3>
+                <p class="services-list__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
@@ -103,8 +122,8 @@
         </section>
 
         <section class="our-team">
-          <h2 class="section-header">
-            <span class="section-header__pre-header">Who we are</span>
+          <h2 class="section-title  section-title--line-after">
+            <span class="section-title__pre-title">Who we are</span>
             Meet our team
           </h2>
           <p class="team_description">
@@ -113,7 +132,7 @@
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
           <!-- Team cards -->
-          <ul class="team">
+          <ul class="team-list list">
             <li class="team-item">
               <!-- Overlay effect -->
               <div class="background_for_overlay">
@@ -126,30 +145,34 @@
                     height="470"
                   />
                   <div class="overlay">
-                    <ul class="social-icon-list">
+                    <ul class="social-icon-list list">
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-twitter"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-pinterest"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-pinterest"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-instagram"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -176,30 +199,34 @@
                     height="470"
                   />
                   <div class="overlay">
-                    <ul class="social-icon-list">
+                    <ul class="social-icon-list list">
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-twitter"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-pinterest"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-pinterest"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-instagram"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -223,30 +250,34 @@
                     height="470"
                   />
                   <div class="overlay">
-                    <ul class="social-icon-list">
+                    <ul class="social-icon-list list">
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-twitter"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-pinterest"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-pinterest"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use href="./img/symbol-defs.svg#icon-instagram"></use></svg
-                        ></a>
+                            <use href="./img/socials.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -262,14 +293,14 @@
       </main>
 
       <!-- Footer -->
-      <footer>
-        <span class="copyright"
+      <footer class="copyright container">
+        <span class="copyright__text"
           >© 2016 MoGo free PSD template by
           <a href="#" class="copyright__link link">Laaqiq</a></span
         >
         <form class="subscribe" action="#">
           <input type="email" class="subscribe__input" placeholder="Your Email..." />
-          <input type="submit" class="subscribe__btn" value="Subscribe" />
+          <input type="submit" class="subscribe__btn button" value="Subscribe" />
         </form>
       </footer>
     </div>
