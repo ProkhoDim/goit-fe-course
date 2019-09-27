@@ -2,6 +2,16 @@
    Import partials below
 */
 @import './normalize';
+
 @import './fonts/fonts';
+
+@import './utils/reset';
 @import './utils/variables';
-@import './utils/my-reset';
+
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+
+@import './component/nav-list';
+@import './component/section-title';
+@import './component/section-title';
