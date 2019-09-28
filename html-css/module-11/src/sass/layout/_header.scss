@@ -28,7 +28,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(../../images/picture.jpg) no-repeat center;
+    background: url(../images/picture.jpg) no-repeat center;
     background-size: cover;
   }
 
@@ -88,7 +88,7 @@
 
 @media (min-resolution: 192dpi) {
   .background::before {
-    background: url(../../images/picture@2x.jpg) no-repeat center;
+    background: url(../images/picture@2x.jpg) no-repeat center;
     background-size: cover;
   }
 }
