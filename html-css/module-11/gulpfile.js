@@ -82,7 +82,7 @@ function fonts() {
 
 function watcher(done) {
   watch('src/**/*.html').on('change', series(html, server.reload));
-  watch('src/sass/**/*.scss').on('change', series(styles, server.reload));
+  watch('src/sass/**/*.scss').on('change', function(){setTimeout(series(styles, server.reload), 100)} );
   watch('src/js/**/*.js').on('change', series(scripts, server.reload));
 
   done();

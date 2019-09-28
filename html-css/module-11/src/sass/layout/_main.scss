@@ -1,21 +1,25 @@
 .flex-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .our-team {
   margin-bottom: 85px;
-}
 
-.our-team__description {
-  font-family: var(--ff_roboto);
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-  text-align: center;
-  padding: 0 130px;
-  margin-bottom: 95px;
+  &__description {
+    font-family: $f_roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $c_team-itm_descr;
+    text-align: center;
+    padding: 0 130px;
+    margin-bottom: 95px;
+  }
 }
 
 .team-list {

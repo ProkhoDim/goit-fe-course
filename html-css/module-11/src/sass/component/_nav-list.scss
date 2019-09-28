@@ -9,17 +9,21 @@
     text-transform: uppercase;
 
     &:hover {
-      color: #fce38a;
+      color: $c_n-list_itm_hover;
     }
 
     &--animation-underline::after {
       position: absolute;
       display: block;
+      -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
       transform: translateY(10px);
       content: '';
       width: 0%;
       height: 3px;
-      background-color: #fce38a;
+      background-color: $c_n-list_itm_hover;
+      -webkit-transition: width 200ms linear 0ms;
+      -o-transition: width 200ms linear 0ms;
       transition: width 200ms linear 0ms;
     }
 

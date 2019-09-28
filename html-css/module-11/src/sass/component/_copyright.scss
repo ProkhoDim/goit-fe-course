@@ -1,0 +1,15 @@
+.copyright {
+  font-family: $f_montserrat;
+  color: $c_copyright_text;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &__link {
+    color: $c_copyright_link;
+  }
+}

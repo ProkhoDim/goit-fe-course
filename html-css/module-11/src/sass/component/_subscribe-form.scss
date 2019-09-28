@@ -1,0 +1,32 @@
+.subscribe__input {
+  color: $c_sscribe-input;
+  font-family: $f_roboto;
+  border: 1px solid #e7e7e7;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+  width: 230px;
+  padding-left: 10px;
+
+  &::placeholder {
+    color: $c_sscribe-input_plcholder;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+:focus::placeholder {
+  content: '';
+  opacity: 0;
+}
+
+.subscribe__btn {
+  font-family: $f_montserrat;
+  font-size: 14px;
+  line-height: 14px;
+  color: $c_sscribe-btn;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $bgc_sscribe-btn;
+  padding: 13px 33px;
+}

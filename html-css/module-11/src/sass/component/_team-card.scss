@@ -2,7 +2,7 @@
   width: 380px;
 
   &__background-for-overlay {
-    background-color: rgba(149, 225, 211, 1);
+    background-color: $bgc_team-item_overlay;
     margin-bottom: 30px;
   }
 
@@ -10,7 +10,13 @@
     position: relative;
 
     &:hover {
+      -webkit-transition: -webkit-transform 200ms linear;
+      transition: -webkit-transform 200ms linear;
+      -o-transition: transform 200ms linear;
       transition: transform 200ms linear;
+      transition: transform 200ms linear, -webkit-transform 200ms linear;
+      -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
       transform: translate(-10px, -10px);
     }
 
@@ -22,16 +28,16 @@
   &__name {
     font-family: $f_montserrat;
     font-size: 14px;
-    color: #333333;
+    color: $c_team-itm_name;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 15px;
   }
 
   &__descr {
-    font-family: var(--ff_roboto);
+    font-family: $f_roboto;
     font-size: 15px;
-    color: #999999;
+    color: $c_team-itm_descr;
     font-weight: 300;
     font-style: italic;
   }
@@ -44,12 +50,30 @@
   left: 0;
   bottom: 0;
   right: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
   background-image: linear-gradient(
     90deg,
     rgba(252, 227, 138, 0.9) 0%,
     rgba(243, 129, 129, 0.9) 100%
   );
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
