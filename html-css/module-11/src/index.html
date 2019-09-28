@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Module 11</title>
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Module 10</title>
   </head>
-
   <body>
     <div class="wrapper">
       <div class="background">
-        <header class="header container">
+        <header class="header container flex-list">
           <h1><a class="logo-link link" href="#">MoGo</a></h1>
           <nav>
-            <ul class="nav-list list">
+            <ul class="nav-list flex-list">
               <li class="nav-list__item nav-list__item--animation-underline">
                 <a class="link" href="#">About</a>
               </li>
@@ -47,11 +47,9 @@
             </ul>
           </nav>
         </header>
-        <section class="container">
-          <h2 class="section-title  section-title--big section-title--white">
-            <span
-              class="section-title__pre-title section-title__pre-title--big"
-            >
+        <section class="container welcome-container">
+          <h2 class="section-title  section-title--big">
+            <span class="section-title__pre-title section-title__pre-title--big">
               Creative Template</span
             >
             Welcome to MoGo
@@ -63,17 +61,15 @@
       <!-- Main content -->
       <main class="container">
         <section>
-          <h2 class="section-title  section-title--line-after">
-            <span class="section-title__pre-title">We work with</span>Amazing
-            Services
+          <h2 class="section-title section-title--small section-title--line-after">
+            <span class="section-title__pre-title section-title__pre-title--small">We work with</span>Amazing Services
           </h2>
-          <ul class="services-list list">
+          <ul class="services-list flex-list">
             <li class="services-list__item">
               <div class="services-list__text icon alarm">
                 <h3 class="services-list__header">Photography</h3>
                 <p class="services-list__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
@@ -82,8 +78,7 @@
               <div class="services-list__text icon line_graph">
                 <h3 class="services-list__header">Web Design</h3>
                 <p class="services-list__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
@@ -92,8 +87,7 @@
               <div class="services-list__text icon computer">
                 <h3 class="services-list__header">Creativity</h3>
                 <p class="services-list__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
@@ -102,8 +96,7 @@
               <div class="services-list__text icon book">
                 <h3 class="services-list__header">Seo</h3>
                 <p class="services-list__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
@@ -112,8 +105,7 @@
               <div class="services-list__text icon home">
                 <h3 class="services-list__header">Css/Html</h3>
                 <p class="services-list__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
@@ -122,8 +114,7 @@
               <div class="services-list__text icon image">
                 <h3 class="services-list__header">Digital</h3>
                 <p class="services-list__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
               </div>
             </li>
@@ -131,40 +122,34 @@
         </section>
 
         <section class="our-team">
-          <h2 class="section-title  section-title--line-after">
-            <span class="section-title__pre-title">Who we are</span>
+          <h2 class="section-title section-title--small section-title--line-after">
+            <span class="section-title__pre-title section-title__pre-title--small">Who we are</span>
             Meet our team
           </h2>
-          <p class="team_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <p class="our-team__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
           <!-- Team cards -->
-          <ul class="team-list list">
+          <ul class="team-list flex-list">
             <li class="team-item">
               <!-- Overlay effect -->
-              <div class="background_for_overlay">
-                <div class="overlay_block">
+              <div class="team-item__background-for-overlay">
+                <div class="team-item__overlay">
                   <img
-                    srcset="
-                      ./images/Matthew_Dix.jpg    380w,
-                      ./images/Matthew_Dix@2x.jpg 760w
-                    "
+                    srcset="./images/Matthew_Dix.jpg 380w, ./images/Matthew_Dix@2x.jpg 760w"
                     sizes="380px"
                     src="./images/Matthew_Dix.jpg"
                     alt="Mattew Dix"
                     height="470"
                   />
                   <div class="overlay">
-                    <ul class="social-icon-list list">
+                    <ul class="social-icon-list flex-list">
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-facebook"
-                            ></use>
+                            <use href="./images/socials.svg#icon-facebook"></use>
                           </svg>
                         </a>
                       </li>
@@ -178,18 +163,14 @@
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-pinterest"
-                            ></use>
+                            <use href="./images/socials.svg#icon-pinterest"></use>
                           </svg>
                         </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-instagram"
-                            ></use>
+                            <use href="./images/socials.svg#icon-instagram"></use>
                           </svg>
                         </a>
                       </li>
@@ -200,13 +181,13 @@
               <!-- end Overlay effect -->
 
               <h3 class="team-item__name">Matthew Dix</h3>
-              <p class="card_descr">Graphic Design</p>
+              <p class="team-item__descr">Graphic Design</p>
             </li>
 
             <li class="team-item">
               <!-- Overlay effect -->
-              <div class="background_for_overlay">
-                <div class="overlay_block">
+              <div class="team-item__background-for-overlay">
+                <div class="team-item__overlay">
                   <img
                     srcset="
                       ./images/Christopher_Campbell.jpg    380w,
@@ -218,13 +199,11 @@
                     height="470"
                   />
                   <div class="overlay">
-                    <ul class="social-icon-list list">
+                    <ul class="social-icon-list flex-list">
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-facebook"
-                            ></use>
+                            <use href="./images/socials.svg#icon-facebook"></use>
                           </svg>
                         </a>
                       </li>
@@ -238,18 +217,14 @@
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-pinterest"
-                            ></use>
+                            <use href="./images/socials.svg#icon-pinterest"></use>
                           </svg>
                         </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-instagram"
-                            ></use>
+                            <use href="./images/socials.svg#icon-instagram"></use>
                           </svg>
                         </a>
                       </li>
@@ -260,31 +235,26 @@
               <!-- end Overlay effect -->
 
               <h3 class="team-item__name">Christopher Campbell</h3>
-              <p class="card_descr">Branding/UX design</p>
+              <p class="team-item__descr">Branding/UX design</p>
             </li>
 
             <li class="team-item">
               <!-- Overlay effect -->
-              <div class="background_for_overlay">
-                <div class="overlay_block">
+              <div class="team-item__background-for-overlay">
+                <div class="team-item__overlay">
                   <img
-                    srcset="
-                      ./images/Michael_Fertig.jpg    380w,
-                      ./images/Michael_Fertig@2x.jpg 760w
-                    "
+                    srcset="./images/Michael_Fertig.jpg 380w, ./images/Michael_Fertig@2x.jpg 760w"
                     sizes="380px"
                     src="./images/Michael_Fertig.jpg"
                     alt="Michael_Fertig"
                     height="470"
                   />
                   <div class="overlay">
-                    <ul class="social-icon-list list">
+                    <ul class="social-icon-list flex-list">
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-facebook"
-                            ></use>
+                            <use href="./images/socials.svg#icon-facebook"></use>
                           </svg>
                         </a>
                       </li>
@@ -298,18 +268,14 @@
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-pinterest"
-                            ></use>
+                            <use href="./images/socials.svg#icon-pinterest"></use>
                           </svg>
                         </a>
                       </li>
                       <li class="social-icon-list__item">
                         <a class="link" href="#">
                           <svg class="social-icon">
-                            <use
-                              href="./images/socials.svg#icon-instagram"
-                            ></use>
+                            <use href="./images/socials.svg#icon-instagram"></use>
                           </svg>
                         </a>
                       </li>
@@ -320,32 +286,23 @@
               <!-- end Overlay effect -->
 
               <h3 class="team-item__name">Michael Fertig</h3>
-              <p class="card_descr">Developer</p>
+              <p class="team-item__descr">Developer</p>
             </li>
           </ul>
         </section>
       </main>
 
       <!-- Footer -->
-      <footer class="copyright container">
-        <span class="copyright__text">
-          © 2016 MoGo free PSD template by
+      <footer class="copyright container flex-list">
+        <span class="copyright__text"
+          >© 2016 MoGo free PSD template by
           <a href="#" class="copyright__link link">Laaqiq</a></span
         >
-        <form class="subscribe" action="#">
-          <input
-            type="email"
-            class="subscribe__input"
-            placeholder="Your Email..."
-          />
-          <input
-            type="submit"
-            class="subscribe__btn button"
-            value="Subscribe"
-          />
+        <form class="subscribe flex-list" action="#">
+          <input type="email" class="subscribe__input" placeholder="Your Email..." />
+          <input type="submit" class="subscribe__btn button" value="Subscribe" />
         </form>
       </footer>
     </div>
-    <script src="js/scripts.min.js"></script>
   </body>
 </html>

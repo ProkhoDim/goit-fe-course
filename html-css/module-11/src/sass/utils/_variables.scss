@@ -1,5 +1,38 @@
 $f_montserrat:"Montserrat", Arial, sans-serif;
 $f_kushan_script:"Kaushan Script", "Times New Roman", serif;
 $f_roboto:"Roboto", Arial, sans-serif;
+
 $cont_width:1200px;
 
+$c_header_text: #ffffff;
+
+
+$c_n-list_itm_hover:#fce38a;
+
+$c_header-icon:#ffffff;
+
+$c_welcome:#ffffff;
+$bgc_sec-titl_underline:#f38181;
+// _services-list.scss
+$c_serv-list_header: #333333;
+$c_serv-list_descr:#999999;
+
+// _social-icon.scss
+$bgc_social-icon:#fce38a;
+$c_social-icon: rgb(243, 129, 129);
+// on Hover
+$bgc_social-icon_hover:#f38181;
+$c_social-icon_hover:#ffffff;
+// _team-card.scss
+$bgc_team-item_overlay:rgba(149, 225, 211, 1);
+$c_team-itm_name:#333333;
+$c_team-itm_descr:#999999;
+// _copyright.scss
+$c_copyright_text:#333333;
+$c_copyright_link:#f38181;
+// _subscribe-form.scss
+$c_sscribe-input:#333333;
+$c_sscribe-input_plcholder:#cccccc;
+
+$c_sscribe-btn: #ffffff;
+$bgc_sscribe-btn:#95e1d3;
