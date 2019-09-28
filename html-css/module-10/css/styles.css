@@ -209,6 +209,7 @@ img {
 }
 
 .section-title {
+  font-family: var(--ff_montserrat);
   text-align: center;
   position: relative;
   font-weight: 700;
@@ -526,5 +527,6 @@ img {
   (min-resolution: 192dpi) {
   .background::before {
     background: url(../img/picture@2x.jpg) no-repeat center;
+    background-size: cover;
   }
 }
