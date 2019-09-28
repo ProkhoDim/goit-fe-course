@@ -32,3 +32,15 @@
     }
   }
 }
+
+.header-icon {
+  display: block;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 20px;
+  fill: $c_header-icon;
+
+  &:hover {
+    fill: $c_n-list_itm_hover;
+  }
+}

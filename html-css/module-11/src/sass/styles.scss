@@ -3,18 +3,18 @@
 */
 @import './normalize';
 
-@import './fonts/fonts';
 
 @import './utils/variables';
-@import './utils/my-reset';
+
+@import './common/my-reset';
+@import './common/fonts';
+@import './common/page-elements';
 
 @import './layout/header';
 @import './layout/main';
+@import './layout/footer';
 
 @import './component/nav-list';
-@import './component/section-title';
-@import './component/services-list';
 @import './component/team-card';
 @import './component/social-icons';
 @import './component/subscribe-form';
-@import './component/copyright';
