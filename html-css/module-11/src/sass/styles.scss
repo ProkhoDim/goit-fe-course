@@ -3,18 +3,10 @@
 */
 @import './normalize';
 
-
 @import './utils/variables';
 
-@import './common/my-reset';
-@import './common/fonts';
-@import './common/page-elements';
+@import './base/glob';
 
-@import './layout/header';
-@import './layout/main';
-@import './layout/footer';
+@import './layout/glob';
 
-@import './component/nav-list';
-@import './component/team-card';
-@import './component/social-icons';
-@import './component/subscribe-form';
+@import './component/glob';

@@ -1,0 +1,50 @@
+.section-title {
+  font-family: $f_montserrat;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+
+  &--small {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &--big {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  &__pre-title {
+    display: block;
+    font-family: $f_kaushan_script;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    margin-bottom: 20px;
+
+    &--big {
+      font-size: 75px;
+      line-height: 75px;
+    }
+
+    &--small {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &--line-after::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 40px);
+    -ms-transform: translate(-50%, 40px);
+    transform: translate(-50%, 40px);
+    width: 60px;
+    height: 3px;
+    background-color: $bgc_sec-titl_underline;
+  }
+}
